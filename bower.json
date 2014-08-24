@@ -1,0 +1,33 @@
+{
+  "name": "angular-scroll-pane",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lght/angular-scroll-pane",
+  "authors": [
+    "Geoffrey Bauduin <bauduin.geo@gmail.com>"
+  ],
+  "description": "AngularJS bindings for jScrollPane",
+  "main": "dist/angular-scroll-pane.min.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angularjs",
+    "angular",
+    "jscrollpane",
+    "scroll",
+    "pane"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angularjs": "~1.2.23",
+    "jscrollpane": "~2.0.14"
+  }
+}
