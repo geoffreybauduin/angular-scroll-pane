@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Angular-scroll-pane by lght</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Angular-scroll-pane</h1>
+          <h2>AngularJS directive to use jScrollPane https://github.com/vitch/jScrollPane</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/lght/angular-scroll-pane/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/lght/angular-scroll-pane/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/lght/angular-scroll-pane" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="angular-scroll-pane" class="anchor" href="#angular-scroll-pane" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-scroll-pane</h1>
+
+<p><a href="https://www.codeship.io/projects/45028"> <img src="https://www.codeship.io/projects/35291d50-4583-0132-64da-460c6dc64c0a/status" alt="Codeship Status for lght/angular-scroll-pane"></a></p>
+
+<p>AngularJS directive to use jScrollPane <a href="https://github.com/vitch/jScrollPane">https://github.com/vitch/jScrollPane</a></p>
+
+<h2>
+<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install</h2>
+
+<ul>
+<li>With bower
+
+<ul>
+<li><code>bower install --save angular-scroll-pane</code></li>
+</ul>
+</li>
+<li>Manually
+
+<ul>
+<li><code>dist/angular-jscrollpane.min.js</code></li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="what-to-include" class="anchor" href="#what-to-include" aria-hidden="true"><span class="octicon octicon-link"></span></a>What to include</h2>
+
+<p>Make sure you are including <code>jQuery</code>, <code>Angular</code> and <code>jScrollPane</code> along with <code>angular-scroll-pane</code>.</p>
+
+<h2>
+<a id="how-to-use-this-module" class="anchor" href="#how-to-use-this-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use this module</h2>
+
+<pre><code>angular.module("app", ['ngJScrollPane']);
+angular.module("app").controller("MyCtrl", function () {
+    $scope.paneConfig = {
+        verticalDragMinHeight: 40
+    }
+});
+
+&lt;html&gt;
+    &lt;body ng-app="app"&gt;
+        &lt;div ng-controller="MyCtrl"&gt;
+            &lt;div scroll-pane scroll-config="paneConfig" id="myScrollPane"&gt;
+                My content needing a scroll pane
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><strong>Don't forget to specify an id for your scroll pane, otherwise it won't be working</strong></p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>If you wish to contribute, fork this repository.</p>
+
+<p><code>grunt build</code> builds the module.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2014 Geoffrey Bauduin</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+        </section>
+
+        <footer>
+          Angular-scroll-pane is maintained by <a href="https://github.com/lght">lght</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47269624-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+      </div>
+    </div>
+  </body>
+</html>
