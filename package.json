@@ -1,6 +1,6 @@
 {
   "name": "angular-scroll-pane",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "AngularJS bindings for jScrollPane",
   "main": "jscrollpane.js",
   "scripts": {

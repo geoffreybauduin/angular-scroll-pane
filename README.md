@@ -37,6 +37,10 @@ angular.module("app").controller("MyCtrl", function () {
 
 **Don't forget to specify an id for your scroll pane, otherwise it won't be working**
 
+### Reinitialize the pane
+
+If you want to reinitialize the pane, you can broadcast `reinit-pane` with the ID of the DOM Element.
+
 ## Contributing
 
 If you wish to contribute, fork this repository.

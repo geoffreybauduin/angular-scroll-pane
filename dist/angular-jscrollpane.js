@@ -14,13 +14,23 @@
             config = $scope.$eval($attrs.scrollConfig);
           }
           fn = function() {
-            return jQuery("#" + $attrs.id).jScrollPane(config);
+            jQuery("#" + $attrs.id).jScrollPane(config);
+            return $scope.pane = jQuery("#" + $attrs.id).data("jsp");
           };
           if ($attrs.scrollTimeout) {
-            return $timeout(fn, $scope.$eval($attrs.scrollTimeout));
+            $timeout(fn, $scope.$eval($attrs.scrollTimeout));
           } else {
-            return fn();
+            fn();
           }
+          return $scope.$on("reinit-pane", function(event, id) {
+            if (id === $attrs.id && $scope.pane) {
+              console.log("Reinit pane " + id);
+              return $scope.$apply(function() {
+                $scope.pane.destroy();
+                return fn();
+              });
+            }
+          });
         },
         replace: true
       };
