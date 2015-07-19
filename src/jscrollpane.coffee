@@ -10,13 +10,16 @@ angular
 				config = {}
 				if $attrs.scrollConfig
 					config = $scope.$eval($attrs.scrollConfig)
+				selector = "##{$attrs.id}"
+				if $attrs.scrollName
+					selector = "[scroll-name='#{$attrs.scrollName}']"
 				fn = ->
-					jQuery("##{$attrs.id}").jScrollPane(config)
-					$scope.pane = jQuery("##{$attrs.id}").data("jsp")
+					jQuery(selector).jScrollPane(config)
+					$scope.pane = jQuery(selector).data("jsp")
 				if $attrs.scrollTimeout
 					$timeout(fn, $scope.$eval($attrs.scrollTimeout))
 				else
-					do fn
+					$timeout(fn, 0)
 				$scope.$on("reinit-pane", (event, id) ->
 					if id is $attrs.id and $scope.pane
 						console.log("Reinit pane #{id}")

@@ -8,19 +8,23 @@
         transclude: true,
         template: '<div class="scroll-pane"><div ng-transclude></div></div>',
         link: function($scope, $elem, $attrs) {
-          var config, fn;
+          var config, fn, selector;
           config = {};
           if ($attrs.scrollConfig) {
             config = $scope.$eval($attrs.scrollConfig);
           }
+          selector = "#" + $attrs.id;
+          if ($attrs.scrollName) {
+            selector = "[scroll-name='" + $attrs.scrollName + "']";
+          }
           fn = function() {
-            jQuery("#" + $attrs.id).jScrollPane(config);
-            return $scope.pane = jQuery("#" + $attrs.id).data("jsp");
+            jQuery(selector).jScrollPane(config);
+            return $scope.pane = jQuery(selector).data("jsp");
           };
           if ($attrs.scrollTimeout) {
             $timeout(fn, $scope.$eval($attrs.scrollTimeout));
           } else {
-            fn();
+            $timeout(fn, 0);
           }
           return $scope.$on("reinit-pane", function(event, id) {
             if (id === $attrs.id && $scope.pane) {
