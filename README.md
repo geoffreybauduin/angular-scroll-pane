@@ -37,7 +37,7 @@ angular.module("app").controller("MyCtrl", function () {
 </html>
 ```
 
-**Don't forget to specify an id for your scroll pane, otherwise it won't be working**
+**Don't forget to specify an id (or an attribute 'scroll-name') for your scroll pane, otherwise it won't be working**
 
 ### Reinitialize the pane
 
