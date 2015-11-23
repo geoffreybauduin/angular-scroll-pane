@@ -20,6 +20,12 @@ angular
 					$timeout(fn, $scope.$eval($attrs.scrollTimeout))
 				else
 					$timeout(fn, 0)
+				$scope.$watch (->
+					$attrs.scrollAlwaysTop
+				), (newVal, oldVal) ->
+					if newVal and $scope.pane
+						$scope.pane.scrollToY 0
+					return
 				$scope.$on("reinit-pane", (event, id) ->
 					if id is $attrs.id and $scope.pane
 						console.log("Reinit pane #{id}")
