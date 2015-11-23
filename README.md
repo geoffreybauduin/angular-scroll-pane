@@ -44,8 +44,8 @@ angular.module("app").controller("MyCtrl", function () {
 If need just specify atribute scroll-always-top. For example, good thing for custom autocomplete list.
 
 ```
-<input type="text" ng-model="item" />
-<div scroll-pane scroll-config="paneConfig" id="myScrollPane" scroll-always-top="{{item}}">
+<input type="text" ng-model="someText" />
+<div scroll-pane scroll-config="paneConfig" id="myScrollPane" scroll-always-top="{{someText}}">
     <div ng-repeat="item in items track by $index">
         <span>{{item}}</span>
     </div>            
