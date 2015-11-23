@@ -39,6 +39,19 @@ angular.module("app").controller("MyCtrl", function () {
 
 **Don't forget to specify an id (or an attribute 'scroll-name') for your scroll pane, otherwise it won't be working**
 
+### Always scroll to top
+
+If need just specify atribute scroll-always-top. For example, good thing for custom autocomplete list.
+
+```
+<input type="text" ng-model="item" />
+<div scroll-pane scroll-config="paneConfig" id="myScrollPane" scroll-always-top="{{item}}">
+    <div ng-repeat="item in items track by $index">
+        <span>{{item}}</span>
+    </div>            
+</div>
+```
+
 ### Reinitialize the pane
 
 If you want to reinitialize the pane, you can broadcast `reinit-pane` with the ID of the DOM Element.
