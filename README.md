@@ -45,7 +45,7 @@ If need just specify atribute scroll-always-top. For example, good thing for aut
 
 ```
 <input ng-model="item" />
-<div scroll-pane scroll-config="scrollPaneConfigValue" scroll-always-top="{{item}}">
+<div scroll-pane scroll-config="paneConfig" id="myScrollPane" scroll-always-top="{{item}}">
     <div ng-repeat="item in items track by $index">
         <span>{{item}}</span>
     </div>            
