@@ -26,6 +26,9 @@
           } else {
             $timeout(fn, 0);
           }
+		  $scope.$watch(function () { return $attrs.scrollAlwaysTop; }, function (newVal, oldVal) {
+			  if (newVal && $scope.pane) $scope.pane.scrollToY(0);
+		  });
           return $scope.$on("reinit-pane", function(event, id) {
             if (id === $attrs.id && $scope.pane) {
               console.log("Reinit pane " + id);
