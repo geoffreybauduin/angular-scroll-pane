@@ -41,7 +41,7 @@ angular.module("app").controller("MyCtrl", function () {
 
 ### Always scroll to top
 
-If need just specify atribute scroll-always-top. For example, good thing for autocomplete list.
+If need just specify atribute scroll-always-top. For example, good thing for custom autocomplete list.
 
 ```
 <input ng-model="item" />
