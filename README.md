@@ -66,7 +66,7 @@ If you wish to contribute, fork this repository.
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Geoffrey Bauduin
+Copyright (c) 2015 Geoffrey Bauduin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
