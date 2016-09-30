@@ -1,6 +1,6 @@
 {
   "name": "angular-scroll-pane",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "AngularJS bindings for jScrollPane",
   "main": "jscrollpane.js",
   "scripts": {
@@ -11,10 +11,11 @@
     "url": "git://github.com/lght/angular-scroll-pane"
   },
   "keywords": [
-    "angularjs",
+    "angular",
     "jscrollpane",
     "scroll",
-    "pane"
+    "pane",
+    "angularjs",
   ],
   "author": "Geoffrey Bauduin <bauduin.geo@gmail.com>",
   "license": "MIT",
