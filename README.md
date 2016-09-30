@@ -1,7 +1,7 @@
 angular-scroll-pane
 ===================
 
-[ ![Codeship Status for lght/angular-scroll-pane](https://www.codeship.io/projects/35291d50-4583-0132-64da-460c6dc64c0a/status)](https://www.codeship.io/projects/45028)
+[![Build Status](https://travis-ci.org/lght/angular-scroll-pane.svg?branch=master)](https://travis-ci.org/lght/angular-scroll-pane)
 
 AngularJS directive to use jScrollPane https://github.com/vitch/jScrollPane
 
